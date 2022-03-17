@@ -1,9 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Grave's Yard</title>
+
+	<link rel="icon" type="image/png" href="images/troubledman.png">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<p>test</p>
+	<div class="container">
+		<div class="headerContainer">
+			<div class="header">
+				<img src="images/mainpage_header.png" draggable="false">
+			</div>
+		</div>
+		<div class="middle">
+			<a href="art_zone/artzone.html"><img id="art" onmouseover="anim(art)" onmouseout="unAnim(art)" src="images/art_icon.png" draggable="false"> </a>
+			<img id="tv" onmouseover="showImage()" onmouseout="hideImage()" src="images/oldtv_off.png" draggable="false" style="cursor: default;">
+			<a href="game_zone/gamezone.html"><img src="images/games_icon.png" draggable="false"> </a>
+		</div>
+		<div class="blog">
+			<a href="blog_zone/blogzone.html"><img src="images/blog_icon.png" draggable="false"> </a>
+		</div>
+		<div class="news">
+			<h3 style="text-align: center">News</h3>
+
+			<hr style="width: 50%">
+
+			<h5 id="news">
+				Próbuje wytłumaczyć kolegom kurwa z Mołdawii, że jak użyją przeciw nam kurwa sprzętu to będą zabici. 
+				Trzymają pałki i my jesteśmy we dwóch oni w trzech. Ja mam akumulator na kablu i nie wiem czy już w nich wjeżdżać czy kurwa za chwile
+			</h5>
+
+		</div>
+		<br>
+		<footer style="height: 50px; background-color: white; text-align: center">
+		<sub>sygun</sub>&<sup>nygus</sup> &copy; 2022
+		</footer>
+	</div>
+
+<script>
+	var randomNumber = 1;
+
+    min = Math.ceil(1);
+    max = Math.floor(5);
+    var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(randomNumber);
+
+	function showImage() {
+		switch(randomNumber) {
+		case 1:
+			document.getElementById("tv").src = "images/oldtv_1.png";
+		break;
+		case 2:
+			document.getElementById("tv").src = "images/oldtv_2.png";
+		break;
+		case 3:
+			document.getElementById("tv").src = "images/oldtv_3.png";
+		break;
+		case 4:
+			document.getElementById("tv").src = "images/oldtv_4.png";
+		break;
+		case 5:
+			document.getElementById("tv").src = "images/oldtv_5.png"
+		break;
+	}
+	}
+
+	function hideImage() {
+		document.getElementById("tv").src = "images/oldtv_off.png";
+	}
+
+	function anim(x) {
+		switch(x) {
+			case art:
+				document.getElementById("art").src = "images/art_icon2.png";
+			break;
+		}
+	}
+
+	function unAnim(x) {
+		switch(x) {
+			case art:
+				document.getElementById("art").src = "images/art_icon.png";
+			break;
+		}
+	}
+</script>
 </body>
 </html>
