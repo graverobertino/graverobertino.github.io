@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: black;
+}
+
+.container {
+    width: 75%;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+}
+
+.news {
+    height: 40%;
+    width: 650px;
+    margin: auto;
+    padding-left: 2px;
+    border: 1px solid white;
+    color: white;
+}
+
+.footer {
+    height: 50px;
+    width: 650px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px;
+}
