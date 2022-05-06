@@ -15,30 +15,19 @@ body {
     justify-content: center;
 }
 
-.middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.middle img {
-    cursor: pointer;
-}
-
-.blog {
-    display: flex;
-    justify-content: center;
-}
-
-.blog img {
-    cursor: pointer;
-}
-
-.news {
-    height: 40%;
-    width: 100%;
-    padding-left: 9px;
-    overflow-y: auto;
-    border: 1px solid white;
+.scifi {
     color: white;
+    text-align: center;
+}
+
+a:link {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
 }

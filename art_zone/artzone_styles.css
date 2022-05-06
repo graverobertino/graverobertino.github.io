@@ -15,30 +15,38 @@ body {
     justify-content: center;
 }
 
-.middle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+td {
+    text-align: center;
+    vertical-align: top;
 }
 
-.middle img {
-    cursor: pointer;
-}
-
-.blog {
-    display: flex;
-    justify-content: center;
-}
-
-.blog img {
-    cursor: pointer;
-}
-
-.news {
-    height: 40%;
-    width: 100%;
-    padding-left: 9px;
-    overflow-y: auto;
-    border: 1px solid white;
+.images {
+    width: 128px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 0px;
     color: white;
+}
+
+a:link {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.footer {
+    height: 50px;
+    width: 650px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px;
 }

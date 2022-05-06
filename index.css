@@ -35,6 +35,18 @@ body {
     color: white;
 }
 
+a:link {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
 .footer {
     height: 50px;
     width: 650px;
