@@ -1,3 +1,6 @@
+---
+permalink: /uhh.html
+---
 <!DOCTYPE html>
 <html>
 	<head>

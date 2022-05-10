@@ -1,0 +1,33 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-color: black;
+}
+
+.container {
+    width: 75%;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.scifi {
+    color: white;
+    text-align: center;
+}
+
+a:link {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
