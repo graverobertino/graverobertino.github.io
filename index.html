@@ -5,48 +5,47 @@
 
 	<title>Grave's Yard</title>
 
-	<link rel="icon" type="image/png" href="images/troubledman.png">
+	<link rel="icon" type="image/png" href="images/robert.png">
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
 	<div class="container">
+		<!--header-->
 		<div class="headerContainer">
 			<div class="header">
 				<img src="images/mainpage_header.png" draggable="false">
 			</div>
 		</div>
+		<!--stuff-->
 		<div class="middle">
 			<a href="art_zone/artzone.html"><img id="art" onmouseover="anim(art)" onmouseout="unAnim(art)" src="images/art_icon.png" draggable="false"> </a>
 			<img id="tv" onmouseover="showImage()" onmouseout="hideImage()" src="images/tv/oldtv_off.png" draggable="false" style="cursor: default;">
 			<img src="images/games_icon_locked.png" draggable="false">
 		</div>
+		<!--stuff2-->
 		<div class="blog">
-			<a href="blog_zone/blogzone.html"><img src="images/blog_icon.png" draggable="false"> </a>
+			<a href="blog_zone/blogzone.html"><img id="blog" onmouseover="anim(blog)" onmouseout="unAnim(blog)" src="images/blog_icon.png" draggable="false"> </a>
 		</div>
+		<br><br><br>
+		<div style="text-align: center;">
+			<img src="images/iframeline.png" style="transform:rotate(180deg)" draggable="false">
+		</div>
+		<!--news-->
 		<div class="news">
-			<p style="text-align: center"><img src="misc_zone/misc_images_misc/wip.png" draggable="false"></p>
-
-			<hr style="width: 600px">
-
-			<h5 style="text-align: center;">
-				Welcome to the site.
-				<br><br>I'm Grave Robert, an """artist""" and """""musician""""". I like to play games, listen to music, generally normal human things.
-				<br><br>This site will contain most, if not all of my creations and other stuff I've made, as for now you can view the blog, art and <del>games</del>.
-				<br><br>I hope that someday this site will be a frequently visted page by some of you!
-			</h5>
-			
-			<h6 style="text-align: center; color: #111111;" >
-				as with many other wips, everything is a subject to change!
-			</h6>
-
+			<iframe src="news_zone/hintodo.html" style="height: 300px; width: 390px; border: none;" title="hi n' todo"></iframe>
+			<iframe src="news_zone/changelog.html" style="height: 300px; width: 260px; border: none;" title="news"></iframe>
+		</div>
+		<div style="text-align: center;">
+			<img src="images/iframeline.png" draggable="false">
 		</div>
 		<br>
+		<!--footer-->
 		<div class="footer">
 			<p>WEBSITE BY GRAVE ROBERT</p>
 		</div>
 	</div>
-
 <script>
+	// tv
 	var randomNumber = 1;
 
     min = Math.ceil(1);
@@ -122,7 +121,7 @@
 	function hideImage() {
 		document.getElementById("tv").src = "images/tv/oldtv_off.png";
 	}
-
+		// icon animations
 	function anim(x) {
 		switch(x) {
 			case art:
@@ -135,6 +134,22 @@
 		switch(x) {
 			case art:
 				document.getElementById("art").src = "images/art_icon.png";
+			break;
+		}
+	}
+
+	function anim(x) {
+		switch(x) {
+			case blog:
+				document.getElementById("blog").src = "images/blog_icon2.png";
+			break;
+		}
+	}
+
+	function unAnim(x) {
+		switch(x) {
+			case blog:
+				document.getElementById("blog").src = "images/blog_icon.png";
 			break;
 		}
 	}

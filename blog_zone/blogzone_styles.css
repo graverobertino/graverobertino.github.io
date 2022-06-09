@@ -6,13 +6,49 @@ body {
     background-color: black;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A8A8A8;
+}
+
+a:link {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
 .container {
-    width: 75%;
+    width: 934px;
 }
 
 .headerContainer {
     display: flex;
     justify-content: center;
+}
+
+.blogizna {
+    text-align: center;
+}
+
+.border {
+    text-align: center;
 }
 
 .footer {

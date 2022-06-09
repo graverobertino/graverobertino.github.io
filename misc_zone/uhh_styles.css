@@ -6,8 +6,24 @@ body {
     background-color: black;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #A8A8A8;
+}
+
 .container {
-    width: 75%;
+    width: 668px;
 }
 
 .headerContainer {

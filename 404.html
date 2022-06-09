@@ -1,1 +1,58 @@
-<h1>no sir</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>Grave's...what?</title>
+	
+		<link rel="icon" type="image/png" href="images/robert.png">
+		<link rel="stylesheet" href="misc_zone/uhh_styles.css">
+	</head>
+<body>
+	<div class="container">
+		<br><br>
+			<div class="scifi">
+				<img src="misc_zone/misc_images_misc/border.png" draggable="false">
+				<br>
+				<p style="font-size: 16px;">
+						Welcome to a non-existent page.
+						<br><br><br>
+				</p>
+				<p style="font-size: 12px;">
+						You either got here, because:
+					<br><br>
+						-You've messed up the url
+					<br>
+                        -Wanted to get to a removed page using url
+                    <br>
+                        -Purposefully messed up the url to check if this website has a 404 page
+					<br><br><br>
+						You can go through this door to return to the main page.
+					</p>
+					<br>
+				<a href="index.html"><img id="door" onmouseover="anim(door)" onmouseout="unAnim(door)" src="misc_zone/misc_images_misc/door.png" draggable="false"> </a>
+				<br>
+				<img style="transform:rotate(180deg)" src="misc_zone/misc_images_misc/border.png" draggable="false">
+			</div>
+		<br>
+	</div>
+
+<script>
+			function anim(x) {
+		switch(x) {
+			case door:
+				document.getElementById("door").src = "misc_zone/misc_images_misc/door2.png";
+			break;
+		}
+	}
+
+	function unAnim(x) {
+		switch(x) {
+			case door:
+				document.getElementById("door").src = "misc_zone/misc_images_misc/door.png";
+			break;
+		}
+	}
+</script>
+</body>
+</html>

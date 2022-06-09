@@ -22,29 +22,6 @@ body {
     background: #A8A8A8;
 }
 
-.container {
-    width: 864px;
-}
-
-.headerContainer {
-    display: flex;
-    justify-content: center;
-}
-
-td {
-    text-align: center;
-    vertical-align: top;
-}
-
-.images {
-    width: 128px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-    padding: 4px 0px;
-    color: white;
-}
-
 a:link {
     color: white;
     font-weight: normal;
@@ -57,12 +34,37 @@ a:visited {
     text-decoration: none;
 }
 
-.footer {
-    height: 50px;
-    width: 650px;
-    margin: auto;
-    background-color: white;
+.container {
+    width: 712px;
+}
+
+.holder {
+    position: relative;
+    top: 0;
+    left: 0;
+
+}
+
+.entry {
+    padding-bottom: 4px;
+    color: white;
+    font-size: 16px;
     text-align: center;
+}
+
+.imgholder {
+    position: relative;
+    top: 0;
+    left: 0px;
+}
+
+.hostage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.content {
+    text-align: left;
     font-size: 14px;
-    padding: 2px;
 }
