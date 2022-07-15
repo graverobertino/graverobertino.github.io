@@ -7,6 +7,7 @@
 	
 		<link rel="icon" type="image/png" href="../images/robert.png">
 		<link rel="stylesheet" href="blogzone_styles.css">
+		<script src="blogzone.js"></script>
 	</head>
 <body>
 	<div class="container">
@@ -15,13 +16,27 @@
 				<img src="misc_images_blog/blogzone_header.png" draggable="false">
 			</div>
 		</div>
-		<p style="text-align: center"><img src="../misc_zone/misc_images_misc/wip.png" draggable="false"></p>
-		<br>
+		
+		<br><br><br><br>
+
 			<div style="text-align: center;">
+				<button onclick="firstBlog()">
+					<img src="misc_images_blog/arrow.png" draggable="false">
+				</button>
+				<button onclick="previousBlog()">
+					<img src="misc_images_blog/arrow2.png" draggable="false">
+				</button>
 				<a href="../index.html">
 				<img src="misc_images_blog/gohome.png" draggable="false">
 				</a>
+				<button onclick="nextBlog()">
+					<img style="transform:rotate(180deg)" src="misc_images_blog/arrow2.png" draggable="false">
+				</button>
+				<button onclick="latestBlog()">
+					<img style="transform:rotate(180deg)" src="misc_images_blog/arrow.png" draggable="false">
+				</button>
 			</div>
+
 			<div class="blogizna">
 					<!--border-->
 					<br>
@@ -29,7 +44,7 @@
 						<img src="misc_images_blog/border.png" draggable="false">
 					</div>
 
-					<iframe src="blog_pages/blog1.html" style=" height: 373px; width: 712px; border: none;" title="blog1"></iframe>
+					<iframe src="blog_pages/blog2.html" style=" height: 373px; width: 712px; border: none;" id="blogborder"></iframe>
 
 					<!--border, again-->
 					<br>
@@ -37,10 +52,10 @@
 						<img style="transform:rotate(180deg)" src="misc_images_blog/border.png" draggable="false">
 					</div>
 			</div>
-		<br>
+		<br><br><br><br>
 		<!--footer-->
 		<div class="footer">
-			<p>WEBSITE BY GRAVE ROBERT</p>
+			<img src="../images/footer.png" draggable="false">
 		</div>
 	</div>
 </body>

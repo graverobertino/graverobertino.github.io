@@ -7,7 +7,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 2px;
 }
 
 ::-webkit-scrollbar-track {
@@ -43,6 +43,12 @@ a:visited {
     justify-content: center;
 }
 
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .blogizna {
     text-align: center;
 }
@@ -52,11 +58,5 @@ a:visited {
 }
 
 .footer {
-    height: 50px;
-    width: 650px;
-    margin: auto;
-    background-color: white;
     text-align: center;
-    font-size: 14px;
-    padding: 2px;
 }
